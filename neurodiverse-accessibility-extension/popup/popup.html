@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neurodiverse Accessibility</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Accessibility Modes</h1>
+      <div class="badges" id="badges"></div>
+    </header>
+    
+    <div class="mode-option">
+      <label class="switch">
+        <input type="checkbox" id="dyslexiaMode">
+        <span class="slider round"></span>
+      </label>
+      <span>Dyslexia Mode</span>
+    </div>
+    
+    <div class="mode-option">
+      <label>Color Blind Mode:</label>
+      <select id="colorBlindMode">
+        <option value="none">None</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="deuteranopia">Deuteranopia</option>
+      </select>
+    </div>
+    
+    <div class="mode-option">
+      <label class="switch">
+        <input type="checkbox" id="autismMode">
+        <span class="slider round"></span>
+      </label>
+      <span>Autism Mode</span>
+    </div>
+    
+    <div class="mode-option">
+      <label class="switch">
+        <input type="checkbox" id="adhdMode">
+        <span class="slider round"></span>
+      </label>
+      <span>ADHD Mode</span>
+    </div>
+    
+    <div class="mode-option">
+      <label class="switch">
+        <input type="checkbox" id="lowVisionMode">
+        <span class="slider round"></span>
+      </label>
+      <span>Low Vision Mode</span>
+    </div>
+    
+    <div class="mode-option">
+      <label class="switch">
+        <input type="checkbox" id="voiceAssistant">
+        <span class="slider round"></span>
+      </label>
+      <span>Voice Assistant</span>
+    </div>
+    
+    <div class="alert-settings">
+      <h3>Memory Alerts</h3>
+      <label>Alert Interval (minutes):</label>
+      <select id="alertInterval">
+        <option value="0">Disabled</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+      </select>
+    </div>
+    
+    <button id="personalizeBtn">Get Personalization Suggestions</button>
+    <div id="suggestions"></div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* Dyslexia Mode */
+
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('../assets/fonts/OpenDyslexic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.dyslexia-mode {
+  font-family: 'OpenDyslexic', Arial, sans-serif !important;
+  letter-spacing: 1.2px !important;
+  line-height: 1.8 !important;
+}
+
+.dyslexia-mode p, .dyslexia-mode li, .dyslexia-mode span, .dyslexia-mode div {
+  font-family: 'OpenDyslexic', Arial, sans-serif !important;
+}
+
+/* Color Blind Modes */
+.protanopia-mode {
+  filter: url('#protanopia');
+}
+
+.deuteranopia-mode {
+  filter: url('#deuteranopia');
+}
+
+/* Autism Mode */
+.autism-mode * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.autism-mode {
+  color: #555 !important;
+  background-color: #f9f9f9 !important;
+}
+
+.autism-mode img, .autism-mode video {
+  display: none !important;
+}
+
+/* ADHD Mode */
+.adhd-mode :focus {
+  outline: 3px solid #ff9900 !important;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.5) !important;
+}
+
+.adhd-mode [data-main-content] {
+  border-left: 4px solid #007bff !important;
+  padding-left: 10px !important;
+}
+
+/* Low Vision Mode */
+.low-vision-mode {
+  font-size: 20px !important;
+}
+
+.low-vision-mode p, .low-vision-mode li, .low-vision-mode span, .low-vision-mode div {
+  font-size: 20px !important;
+}
+
+.low-vision-mode {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+.low-vision-mode a {
+  color: #0000EE !important;
+  text-decoration: underline !important;
+}
